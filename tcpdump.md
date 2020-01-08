@@ -7,10 +7,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ## Analysis
 
 Get domain names in DNS queries and search for suspicious TLD
-```markdown
-**tcpdump -nn -r test.pcap dst port 53 | cut -d " " -f 8 | grep -Ev '(net|com|org)'**
+
+**`tcpdump -nn -r test.pcap dst port 53 | cut -d " " -f 8 | grep -Ev '(net|com|org)'`**
  - E Extended Regex - v inverted match
-```
+
 
 
 ```markdown
